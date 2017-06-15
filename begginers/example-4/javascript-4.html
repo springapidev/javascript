@@ -209,8 +209,36 @@ JavaScript programmers tend to use camel case that starts with a lowercase lette
 
 firstName, lastName, masterCard, interCity. </li>
 <li>JavaScript uses the Unicode character set. Unicode covers (almost) all the characters, punctuations, and symbols in the world. </li>
-<li> </li>
+<li>Semicolons separate JavaScript statements.
 
+Add a semicolon at the end of each executable statement: 
+var a, b, c;
+a = 5;
+b = 6;
+c = a + b; </li>
+<li> When separated by semicolons, multiple statements on one line are allowed: a = 5; b = 6; c = a + b;
+<b>On the web, you might see examples without semicolons.
+Ending statements with semicolon is not required, but highly recommended.</b>
+</li>
+<li>avaScript ignores multiple spaces. You can add white space to your script to make it more readable.
+The following lines are equivalent:
+var person = "Hege";
+var person="Hege"; </li>
+<li>A good practice is to put spaces around operators ( = + - * / ): var x = y + z;  </li>
+<li>JavaScript Line Length and Line Breaks
+
+For best readability, programmers often like to avoid code lines longer than 80 characters.
+
+If a JavaScript statement does not fit on one line, the best place to break it, is after an operator:
+ document.getElementById("demo").innerHTML =
+"Hello Dolly!"; </li>
+<li><b>JavaScript Code Blocks</b> 
+
+JavaScript statements can be grouped together in code blocks, inside curly brackets {...}.
+
+The purpose of code blocks is to define statements to be executed together.
+
+One place you will find statements grouped together in blocks, is in JavaScript functions: </li>
 </ul>
 <hr/>
 

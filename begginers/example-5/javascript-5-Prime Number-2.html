@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Prime Number Start to end Number | Js Ex-5</title>
+<script type="text/javascript">
+
+function isPrime(num){
+var n=Math.sqrt(num);
+for(i=2;i<=n;i++){
+if(num%i==0)
+return false;
+}
+return true;
+}
+
+
+function checkPrimeNumbers(startNum, endNum){
+	for(startNum; startNum<=endNum; startNum++){
+		if(isPrime(startNum)){
+document.writeln(startNum+" "+"Is Prime");
+document.writeln("<br/>");
+}else{
+document.writeln(startNum+" " +"Is not prime");
+document.writeln("<br/>");
+}
+}
+	}
+</script>
+</head>
+<body style="font-size:18px; width:70%; margin:0 auto;" onload="checkPrimeNumbers(2,100)">
+
+</body>
