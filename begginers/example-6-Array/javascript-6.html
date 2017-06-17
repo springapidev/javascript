@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Js Ex-4</title>
+</head>
+<body style="font-size:22px; width:70%; margin:0 auto; line-height:1.5em">
+
+<h2>Array</h2>
+<p>Array is a special type of variable that can hold/contain more than one value at a time. </p>
+<p>Look at the example bellow</p>
+var city1="Dhaka";
+var city2="New York";
+var city3="Sydney";
+var city4="London";
+<p>In the above example, there are four variables and every variable contain one value or one city name.</p>
+<p>But....an array?</p>
+<p>An array can hold all those values into it. Look at the example...</p>
+<p id="city1"></p>
+var cities = ["Dhaka", "New York", "Sydney","London"];
+document.getElementById("city1").innerHTML = cities;
+<p>Thus, Syntax of creating array is:</p>
+
+var array_variable_name = [item1, item2, item3, item4...]; 
+
+<p>Note:</p>
+<ul>
+<li>You can not use comma at the end of last item, Look at example-this bellow code can fail on some browser like IE-8</li>
+var cities = ["Dhaka", "New York", "Sydney","London",];
+<li>You can use space and white space easily, Look at bellow code: </li>
+
+var cities = [
+			"Dhaka",
+ 			"New York",
+  			"Sydney",
+  			"London"
+             ];
+
+
+</ul>
+<p>We can create array different ways, We have already
+
+ learn Best way like bellow:
+
+var cities = ["Dhaka", "New York", "Sydney","London"];
+
+<p>Another way is mentioned bellow:</p>
+<p id="city2"></p>
+var cities = new Array("Dhaka", "New York", "Sydney","London");
+document.getElementById("city2").innerHTML = cities;
+<ul type="circle">
+<li>Array Index start from 0(zero), so </li>
+cities[0]="Dhaka";
+cities[1]="New York";
+cities[2]="Sydney";
+cities[3]="London";
+<li>If we print cities[2], we shall get Sydney as value</li>
+<li>We can get array size or length by using following code: </li>
+<li>length: <p id="city3"></p></li>
+var lengthOfCities=cities.length;
+document.getElementById("city3").innerHTML = lengthOfCities;
+</ul>
+<p>Array length proerties returns the size of Array: </p>
+var lengthOfCities=cities.length;
+<p>Array sort() method sorts the Array at assending order by default, Look at simple example:  </p>
+<p>Example of sort() method</p>
+var sortedCities=cities.sort();
+
+<p>Array sort() method sorts the Array at assending order by default, Look at simple example:  </p>
+<p>Example of sort() method</p>
+var sortedCities=cities.sort();
+
+
+
+
+
+
+
+
+
+
+
+<h1>Best of LUCK!</h1>
+</body>
+</html> 
