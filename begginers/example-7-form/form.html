@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JavaScript</title>
+<script>
+function display(){
+	var fname=document.forms['myForm']['fname'].value;
+	document.getElementById('demoName').innerHTML=fname;
+	var gender=document.forms['myForm']['gender'].value;
+	document.getElementById('demoGender').innerHTML=gender;
+	
+	var hobb=document.forms[0];
+	
+	var hob	="";
+	for(i=0; i<hobb.length;i++){
+		if(hobb[i].checked){
+		hob=hob+hobb[i].value+", ";
+		}
+		}
+	document.getElementById('demoGHobby').innerHTML=hob;
+	
+	
+	var en=document.forms[1];
+	
+	var entry	="";
+	for(i=0; i<en.length;i++){
+		if(en[i].checked){
+		entry=entry+en[i].value+", ";
+		}
+		}
+	document.getElementById('demoEntry').innerHTML=entry;
+	}
+
+</script>
+</head>
+
+<body>
+<form name="myForm">
+Name: <input type="text" id="fname"/>
+gender:male <input type="radio" name="gender" value="m"/>
+Female<input type="radio" name="gender" value="f"/>
+Unknown: <input type="radio" name="gender" value="u"/>
+
+Hobby:
+<input type="checkbox" name="hobby" value="reading"/>reading
+<input type="checkbox" name="hobby" value="writing"/>writing
+ <input type="checkbox" name="hobby" value="danceing"/>danceing
+
+Entry:
+<input type="checkbox" name="entry" value="boys"/>boys
+<input type="checkbox" name="entry" value="girls"/>girls
+ <input type="checkbox" name="entry" value="olds"/>olds
+</form>
+<button type="submit" onClick="display()">Submit</button>
+<p id="demoName"></p><br/>
+<p id="demoGender"></p><br/>
+<p id="demoGHobby"></p><br/>
+<p id="demoEntry"></p><br/>
+</body>
+</html>
