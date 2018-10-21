@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<title>Hello Js 4 | Light On OFF</title>
+<meta charset="UTF-8"/>
+</head>
+<body>
+
+<script>
+var sample1=new Image();
+sample1.src="sample1.gif";
+
+var sample2=new Image();
+sample2.src="sample2.gif";
+
+function switchOne(){
+document.sample.src = sample1.src;
+}
+function switchTwo(){
+document.sample.src=sample2.src;
+}
+</script>
+<a onMouseOver="switchTwo()" onMouseOut="switchOne()"><img name="sample" src="sample1.gif" border="0"/></a>
+
+<!--Way-2-->
+<img id="myImage" src="sample2.gif" style="width:100px" 
+onMouseOut='document.getElementById("myImage").src="sample2.gif"'
+ onMouseOver="document.getElementById('myImage').src='sample1.gif'">
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+

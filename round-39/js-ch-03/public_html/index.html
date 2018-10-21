@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+            //Example-1
+            function display() {
+                document.write("Yes It is function");
+            }
+            display();
+            document.write("<hr/>");
+            //Example-2
+            var x = "yes it is also function";
+            function display2(str) {
+                document.write(str);
+            }
+            display2(x);
+            document.write("<hr/>");
+            //Example-3
+            var y = "yes it is also function 3";
+            function display3(str) {
+                return str;
+            }
+            var rs = display3(y);
+            document.write(rs);
+            document.write("<hr/>");
+            document.write(display3(y));
+            document.write("<hr/>");
+            //Example-3
+
+            var firstName = "Md.";
+            var lastName = "ABC.";
+            var gap = " ";
+
+            function display4(g, ln, fn) {
+                var fullName = fn + g + ln;
+                return fullName;
+            }
+
+            document.write(display4(gap, lastName, firstName));
+/////////////// Undefine, 
+            var str;
+            console.log(str);
+            document.write("<hr/>");
+            document.write(str);
+            var nullVal = null;
+            document.write(nullVal);
+
+            document.write("<hr/>");
+            var work = "Working with JavaScript is hard work but rewarding work";
+            document.writeln(work);
+            document.write("<hr/>");
+            var play = work.replace(/work/gi, "play");
+            document.write(play);
+            document.write("<hr/>");
+            var play2 = work.replace(/work/g, "play");
+            document.write(play2);
+
+            document.write("<hr/>");
+            var play3 = work.replace(/work/, "play");
+            document.write(play3);
+
+            document.write("<hr/>");
+            var play4 = work.replace(/work/g, "play");
+            document.write(play4);
+
+            document.write("<hr/>");
+            var str = "\nis is this nis it?";
+            document.write(str);
+            var patt1 = /^is/mi;
+            var result = str.match(patt1);
+            document.write(result);
+        </script>
+    </body>
+</html>
