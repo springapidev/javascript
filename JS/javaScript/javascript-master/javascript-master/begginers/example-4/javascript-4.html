@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Js Ex-4</title>
+</head>
+<body style="font-size:22px; width:70%; margin:0 auto; line-height:1.5em">
+
+<h2>JavaScript Statements</h2>
+
+<p>Statements are separated by semicolons.</p>
+
+<p>The variables x, y, and z are assigned the values 5, 6, and 11.</p>
+
+<p>Then the value of z is displayed in the paragraph below:</p>
+
+<p id="demo"></p>
+
+<script>
+var x, y, z;
+x = 5;
+y = 6;
+z = x + y;
+document.getElementById("demo").innerHTML = z;
+</script>
+<hr/>
+<h2>JavaScript Numbers</h2>
+
+<p>Number can be written with or without decimals.</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = 10.50;
+</script>
+<hr/>
+
+<h2>JavaScript Strings</h2>
+
+<p>Strings can be written with double or single quotes.</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = 'Mr Reza';
+</script>
+<hr/>
+<h2>JavaScript Variables</h2>
+
+<p>In this example, x is defined as a variable.
+Then, x is assigned the value of 6:</p>
+
+<p id="demo"></p>
+
+<script>
+var x;
+x = 6;
+document.getElementById("demo").innerHTML = x;
+</script>
+
+<hr/>
+<h2>Assigning JavaScript Values</h2>
+
+<p>In JavaScript the = operator is used to assign values to variables.</p>
+
+<p id="demo"></p>
+
+<script>
+var x, y;
+x = 5;
+y = 6;
+document.getElementById("demo").innerHTML = x + y;
+</script>
+<hr/>
+<h2>JavaScript Expressions</h2>
+
+<p>Expressions compute to values.</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = 5 * 10;
+</script>
+<hr/>
+<h2>JavaScript Expressions</h2>
+
+<p>Expressions compute to values.</p>
+
+<p id="demo"></p>
+
+<script>
+var x;
+x = 5;
+document.getElementById("demo").innerHTML = x * 10;
+</script>
+<hr/>
+<h2>JavaScript Expressions</h2>
+
+<p>Expressions compute to values.</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = "John" + " "  + "Doe";
+</script>
+<hr/>
+<h2>The var Keyword Creates Variables</h2>
+
+<p id="demo"></p>
+
+<script>
+var x, y;
+x = 5 + 6;
+y = x * 10;
+document.getElementById("demo").innerHTML = y;
+</script>
+<hr/>
+<h2>JavaScript Comments are NOT Executed</h2>
+
+<p id="demo"></p>
+
+<script>
+var x;
+x = 5;
+// x = 6; I will not be executed
+document.getElementById("demo").innerHTML = x;
+</script>
+<hr/>
+<h2>JavaScript is Case Sensitive</h2>
+
+<p>Try change lastName to lastname.</p>
+
+<p id="demo"></p>
+
+<script>
+var lastname, lastName;
+lastName = "Doe";
+lastname = "Peterson";
+document.getElementById("demo").innerHTML = lastName;
+</script>
+
+<hr/>
+<h1>Let's Study Some Theory</h1>
+<ul type="circle">
+<li> JavaScript syntax is the set of rules, how JavaScript programs are constructed. </li>
+<li>A computer program is a list of "instructions" to be "executed" by the computer.
+In a programming language, these program instructions are called statements.  </li>
+<li> JavaScript is a programming language. JavaScript statements are separated by semicolons: </li>
+<li> In HTML, JavaScript programs are executed by the web browser. </li>
+<li>JavaScript statements are composed of: Values, Operators, Expressions, Keywords, and Comments.  </li>
+<li> The JavaScript syntax defines two types of values: Fixed values and variable values.
+Fixed values are called literals. Variable values are called variables. </li>
+<li><b>JavaScript Literals:</b> The most important rules for writing fixed values are:
+Numbers are written with or without decimals: 10.5 and 100 </li>
+<li>Strings are text, written within double or single quotes: "John Doe" OR 'John Doe' </li>
+<li> n a programming language, variables are used to store data values.
+
+JavaScript uses the var keyword to declare variables.
+
+An equal sign is used to assign values to variables.
+
+In this example, x is defined as a variable. Then, x is assigned (given) the value 6: var x;
+
+x = 6;  </li>
+<li> avaScript uses arithmetic operators ( + - *  / ) to compute values: (5 + 6) * 10 </li>
+<li> JavaScript uses an assignment operator ( = ) to assign values to variables: 
+var x, y;
+x = 5;
+y = 6;   </li>
+<li>  An expression is a combination of values, variables, and operators, which computes to a value.
+
+The computation is called an evaluation.
+
+For example, 5 * 10 evaluates to 50:</li>
+<li>Expressions can also contain variable values: x * 10 </li>
+<li>The values can be of various types, such as numbers and strings.
+
+For example, "John" + " " + "Doe", evaluates to "John Doe": "John" + " " + "Doe" </li>
+<li> JavaScript keywords are used to identify actions to be performed.
+
+The var keyword tells the browser to create variables:
+ var x, y;
+x = 5 + 6;
+y = x * 10;</li>
+<li>JavaScript Identifiers  are names. In JavaScript, identifiers are used to name variables (and keywords, and functions, and labels).
+
+The rules for legal names are much the same in most programming languages.
+
+In JavaScript, the first character must be a letter, or an underscore (_), or a dollar sign ($).
+
+Subsequent characters may be letters, digits, underscores, or dollar signs.<em>Numbers are not allowed as the first character.
+This way JavaScript can easily distinguish identifiers from numbers. </em> </li>
+<li>JavaScript is Case Sensitive. All JavaScript identifiers are case sensitive. 
+
+The variables lastName and lastname, are two different variables. </li>
+<li>JavaScript does not interpret VAR or Var as the keyword var. </li>
+<li><em>Hyphens:</em>
+
+first-name, last-name, master-card, inter-city.
+
+<em>Hyphens are not allowed in JavaScript. It is reserved for subtractions.</em>
+ </li>
+<li><em>Underscore:</em> first_name, last_name, master_card, inter_city. </li>
+<li><em> Upper Camel Case (Pascal Case):</em> FirstName, LastName, MasterCard, InterCity.</li>
+<img src="images/pic_camelcase.jpg" width="200" height="221" alt="Camel"/>
+
+<li><b>Lower Camel Case:</b>
+
+JavaScript programmers tend to use camel case that starts with a lowercase letter:
+
+firstName, lastName, masterCard, interCity. </li>
+<li>JavaScript uses the Unicode character set. Unicode covers (almost) all the characters, punctuations, and symbols in the world. </li>
+<li>Semicolons separate JavaScript statements.
+
+Add a semicolon at the end of each executable statement: 
+var a, b, c;
+a = 5;
+b = 6;
+c = a + b; </li>
+<li> When separated by semicolons, multiple statements on one line are allowed: a = 5; b = 6; c = a + b;
+<b>On the web, you might see examples without semicolons.
+Ending statements with semicolon is not required, but highly recommended.</b>
+</li>
+<li>avaScript ignores multiple spaces. You can add white space to your script to make it more readable.
+The following lines are equivalent:
+var person = "Hege";
+var person="Hege"; </li>
+<li>A good practice is to put spaces around operators ( = + - * / ): var x = y + z;  </li>
+<li>JavaScript Line Length and Line Breaks
+
+For best readability, programmers often like to avoid code lines longer than 80 characters.
+
+If a JavaScript statement does not fit on one line, the best place to break it, is after an operator:
+ document.getElementById("demo").innerHTML =
+"Hello Dolly!"; </li>
+<li><b>JavaScript Code Blocks</b> 
+
+JavaScript statements can be grouped together in code blocks, inside curly brackets {...}.
+
+The purpose of code blocks is to define statements to be executed together.
+
+One place you will find statements grouped together in blocks, is in JavaScript functions: </li>
+</ul>
+<hr/>
+
+<h1>Best of LUCK!</h1>
+</body>
+</html> 

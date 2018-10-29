@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>TODO write content</div>
+        <script>
+            function converter(decNum) {
+                if (decNum >= 16) {
+                    return decNum.toString(16);
+                } else {
+                    return "0" + decNum.toString(16);
+                }
+            }
+            var colorIt = "#" + (converter(255) + converter(108) + converter(4));
+            document.write(colorIt);
+        </script>
+    </body>
+</html>

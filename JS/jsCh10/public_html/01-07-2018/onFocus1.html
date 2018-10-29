@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>onFocus</title>
+</head>
+
+<body bgcolor="rosybrown">
+<h3>Click on The Text Window.</h3>
+<form>
+<input type="text" onFocus="autoWrite();"/>
+</form>
+<script>
+function autoWrite(){
+	document.forms[0].elements[0].value = "Greetings eartlings!";
+	}
+</script>
+</body>
+</html>

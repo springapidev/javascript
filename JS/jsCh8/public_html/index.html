@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+            var myWord = new String("It is impolite to wind");
+            myWord = "substring(8,12): " + myWord.substring(8, 12).fontcolor("red").fontsize(50).italics() + "<hr/>";
+            myWord += "charAt(20).fontcolor('red').fontsize(50).italics(): " + myWord.charAt(20).fontcolor("red").fontsize(50).italics() + "<hr/>";
+            myWord += "charCodeAt('f'): " + myWord.charCodeAt("f") + "<hr/>";
+            myWord += "indexOf('t'): " + myWord.indexOf("t") + "<hr/>";
+            document.write(myWord);
+
+            var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            document.write(txt.length);
+
+
+
+        </script>
+    </body>
+</html>

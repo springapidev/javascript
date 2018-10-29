@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h2>Page 93</h2>
+
+        <script>
+          var total=new Function("item","tax","return item+=tax");
+          document.write(total(20000,3000));
+          
+          
+          
+          function makeSum(item, tax){
+              var total=item+tax;
+              return total;
+          }
+         
+          document.write( makeSum(10000,1500));
+        </script>
+
+    </body>
+</html>

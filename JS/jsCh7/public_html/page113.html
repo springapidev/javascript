@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <button onclick="openWin()">Open </button>
+        <button onclick="moveRel()">Move</button>
+        <button onclick="resizeRel()">Resize</button>
+        <script>
+            var win;
+            function openWin() {
+                win = window.open("samWin.html", "win", "width=200, height=100");
+
+            }
+            function moveRel() {
+                win.moveTo(500, 100);
+                win.focus();
+            }
+            function resizeRel() {
+                win.resizeBy(300, 150);
+                win.focus();
+            }
+        </script>
+    </body>
+</html>

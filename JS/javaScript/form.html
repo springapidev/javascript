@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+  <meta charset="UTF-8">
+  <script>
+  function diplayFormData(){
+	  var fn=document.getElementById('fname').value;
+	  var ln=document.getElementById('lname').value;
+	  var fullName=fn+" "+ln;
+	 document.getElementById('demo').innerHTML=fullName;
+	  
+	  }
+  
+  </script>
+   </head>
+<body>
+ <form>
+ First name:<input type="text" id="fname"/>
+ Last name:<input type="text" id="lname"/>
+  </form>
+  
+  
+  <button type="submit" onClick="diplayFormData()">Send.....</button>
+Name: <p id="demo"></p>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            label{
+                color: red;
+                padding: 3px 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Form Validation</h1>
+        <form name="myForm">
+            Name: <input type="text" name="fname"><label id="fnamex"></label><br/>
+
+            Gender:<input type="radio" name="gender" value="Male" />Male
+            <input type="radio" name="gender" value="Female"/>Female
+            <label id="gender"></label><br/>
+
+            Education<input type="checkbox" name="ssc" value="Ssc" />SSC
+            <input type="checkbox" name="hsc" value="Hsc"/>HSC
+            <label id="education"></label><br/>
+
+            Round<select name="round">
+                <option value="Select A Round" selected="selected">Select A Round</option>
+                <option value="Round 36">Round-36</option>
+                <option value="Round 37">Round-37</option>
+                <option value="Round 38">Round-38</option>
+            </select>
+            <label id="round"></label><br/>
+
+            <textarea rows="5" cols="20" name="msg" placeholder="Enter At least 10 Characters"></textarea>
+            <label id="msg"></label><br/>
+
+            <input type="reset" value="Reset">
+        </form>
+      
+        <button onClick="validateForm()">Submit</button>
+        <button onClick="closeWindow()">Close Window</button>
+        <script>
+            var win;
+          
+            function closeWindow() {
+                win.close();
+            }
+            function validateForm() {
+                //////////////////////// for Name //////////////
+                var fname = document.forms["myForm"]["fname"].value;
+
+                var gender = document.forms["myForm"]["gender"].value;
+                var education = "";
+
+                if (document.forms["myForm"].ssc.checked) {
+                    education += document.forms["myForm"]["ssc"].value;
+                }
+
+                if (document.forms["myForm"].hsc.checked) {
+                    education += ", " + document.forms["myForm"]["hsc"].value;
+                }
+                var round = document.forms["myForm"]["round"].value;
+                var msg = document.forms["myForm"]["msg"].value;
+                ////////////////////////validation For Name Field////////////
+                if (fname == "") {
+                    document.getElementById('fnamex').innerHTML = "Name must be filled out";
+                    return false;
+                }else if (fname.length < 3) {
+                    document.getElementById('fnamex').innerHTML = "Name Length at least 3 Characters";
+                    return false;
+                    ////////////////////////validation For Gender Field
+                } else if (gender == "") {
+                    document.getElementById('gender').innerHTML = "Tell Me Your Gender";
+                    return false;
+                    ////////////////////////validation For Education Field
+                } else if (!document.forms["myForm"].ssc.checked && !document.forms["myForm"].hsc.checked) {
+                    document.getElementById('education').innerHTML = "Tell Me Your education";
+                    return false;
+                    ////////////////////////validation For Round Field
+                } else if (round == "Select A Round") {
+                    document.getElementById('round').innerHTML = "Select Your Round";
+                    return false;
+                    ////////////////////////validation For Message Field
+                } else if (msg.length < 10) {
+                    document.getElementById('msg').innerHTML = "At least 10 characters";
+                    return false;
+                } else {
+                    win = window.open("", "", "width=400");
+                    win.document.write("<h2><center>Form Output</center></h2><hr>");
+                    
+                    win.document.write("Name: " + fname + "<br/>");
+                    win.document.write("Gender: " + gender + "<br/>");
+
+                    win.document.write("Education: " + education + "<br/>");
+                    win.document.write("Round: " + round + "<br/>");
+                    win.document.write("Comments: " + msg + "<br/>");
+                }
+            }
+        </script>
+    </body>
+</html>

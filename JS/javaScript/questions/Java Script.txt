@@ -1,0 +1,37 @@
+1. What is JavaScript?
+Ans:- JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.
+
+2.Why we use JavaScript?
+Ans:- We use JavaScript to introduce dynamic interactivity into web pages.
+
+3.What is function in JavaScript?
+Ans:- In JavaScript, function is a block of code designed to perform a particular task. JavaScript functions are defined with the function keyword.
+
+4. What is alart() in JavaScript?
+Ans:- alart() is a function in JavaSCript. This function sends a message to the page.
+
+5. What is argument in JavaScript?
+Ans:- The arguments are the value received by an function and the value works sa a local variable in the function.
+
+6. What is Parameters?
+Ans:-  The parameters are the aliases for the values that will be passed to the function.
+
+7. What is the main difference between "arguments" and "parameters" in javascript?
+Ans:- The parameters are the aliases for the values that will be passed to the function. The arguments are the actual values.
+
+var foo = function( a, b, c ) {}; // a, b, and c are the parameters
+
+foo( 1, 2, 3 ); // 1, 2, and 3 are the arguments
+
+8.How many types of functions we use in JavaScript?
+Ans:- There are two types of function we ude in JavaScript. Built in function and user-defined function
+
+9. What is user defined function?
+Ans:- The function that programmer writes and uses in his own page is called user defined function.
+
+10. What type of language JavaScript is?
+Ans:- JavaScript is as interpreted language.
+
+11. What is interpreted language?
+Ans:- An interpreted language is a programming language for which most of its implementations execute instructions directly, without previously compiling a program into machine-language instructions.
+

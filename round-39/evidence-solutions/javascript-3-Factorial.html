@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Factorial | Js Ex-5</title>
+<script type="text/javascript">
+var n;
+function calculatefactorial(n){
+	if(n==0){
+		return 1;
+		}else{
+			return n*calculatefactorial(n-1);
+		}
+		}
+var number=prompt("Enter a Numver: ","1");
+alert(calculatefactorial(number));
+document.writeln("Factorial of Your input ("+number+") "+"is: "+calculatefactorial(number));
+</script>
+</head>
+<body style="font-size:18px; width:70%; margin:0 auto;" onload="timeOn()">
+
+</body>

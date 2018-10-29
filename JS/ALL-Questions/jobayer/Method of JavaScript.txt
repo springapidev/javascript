@@ -1,0 +1,31 @@
+How function construct and function literals?
+There are two method of creating function. (i). Function construct (ii). function literals.
+The function construct looks like the new object or array constructor. It has this has this general format:
+var variableName = New Function("exp1", "exp2",); The Function() constructor uses parentheses rather than curly braces and all elements of the function are seperated by commas.
+The function has no name. 
+Function Literals:
+It is the newer version of function constructor. It is more like function statements. It uses curly braces. It has no unique name of their own for purposes of reference. 
+Syntax: var variableName = new function(arg1,agr2) {return exp1}
+what do you understand by proto type concept in JavaScript?
+In JavaScript the concept of class revolves around the concept of a prototype. The prototype concept treats the name object with all of the properties that all members of the class have. 
+All JavaScript objects inherit properties and method from a prototype.
+The JavaScript prototype property allows to add new properties to object constructors.
+Why object-oriented programming is essential in JavaScript?
+JavaScript is an excellent language to write object oriented web applications. It can support OOP because it supports inheritance through prototyping as well as properties and methods.
+When we write object-oriented code it instantly gives us power; we can write code that can be re-used and that is encapsulated.
+What is Document object model?
+In the JavaScript document object model(DOM) is a HTML page. The Document object contains the properties whose information is used by JavaScript. Statements such as document.write() that make up part of the model. JavaScript DOM is the sum total of the Document object's properties and methods.
+With the object model, JavaScript gets all the power it needs to create dynamic HTML.
+what is the benefit of preloading image?
+To reduce loading times and unexpected behavior it can be desirable to load images into the browser's cache as soon as a page is loaded. When designing a page where one graphic replaces another the image swapping should be immediate.
+In JavaScript first a new image object is defined and then the new objcet's source is defined. There is no limit of number of image chaching. 
+What are the function of open and close method?
+The open method open a new window and close method close the window. This method is often used together with the open() method. Syntax: window.open()/window.close().
+Example: function closeWin() {
+myWindow.close();
+}
+What are the events in HTML and JavaScript?
+HTML events are "things" that happen to HTML elements. When JavaScript is used in HTML Pages, JavaScript can"read" on these events. JavaScript lets us execute code when events are detected. 
+Example: <button onclick= "document.getElementById('demo').innerHTML = Date()">The time is?</button>
+What are the method of the location object?
+The location object contains information about the current URL. The location Object is a part of the window objcet and is accessed through the window.locationproperty.

@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Mouse Events</title>
+<style>
+body{
+	font-family:Verdana;
+	background-color:#ffbf00;
+}
+h2{
+	color:#b51300;
+	font-size:16pts;
+	font-weight:bold;
+}
+a{
+	color:#a573b6;
+	font-weight:bold;
+}
+</style>
+
+</head>
+
+<body onDblClick="helpMe();">
+<h2>Follow  the instructions: <br/>(Or double-click to get help.)</h2>
+<ul>
+<a href="#" onMouseOver="alert('As you move over the spot.');">onMouseOver</a><br/>
+<a href="#" onMouseUp="alert('You have to press Down to get Up');">onMouseUp</a><br/>
+<a href="#" onMouseDown="alert('You can keep it down.');">onMouseDown</a><br/>
+<a href="#" onClick="alert('Any click will do');">onClick</a><br/>
+<a href="#" onMouseOut="alert('First move over and then off');">onMouseOut</a><br/>
+
+<form>
+<input type="button" value="onMouseMove" onMouseMove="alert('Press enter or return--don\'t move the mouse')"/><br/>
+</ul>
+</form>
+<script>
+function helpMe(){
+	alert('Help has arrived. \n----------------------\n 1. Turn on your monitor.\n 2.Look at the monitor.\n 3.Follow instruction.');
+	}
+</script>
+</body>
+</html>

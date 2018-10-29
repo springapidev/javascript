@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+            function showScreenDetails() {
+                var display = "My Screen Properties";
+                var screenSee = new Array(5);
+                screenSee[0] = "Available Screen height: " + screen.availHeight;
+                screenSee[1] = "Available Screen width " + screen.availWidth;
+                screenSee[2] = "My Screen height: " + screen.height;
+                screenSee[3] = "My Screen width " + screen.width;
+                screenSee[4] = "Color Depth: " + screen.colorDepth;
+                
+                for (var counter = 0; counter < screenSee.length; counter++) {
+                    display += screenSee[counter]+ "<br/>";
+                }
+                document.write(display);
+            }
+           showScreenDetails(); 
+        </script>
+    </body>
+</html>

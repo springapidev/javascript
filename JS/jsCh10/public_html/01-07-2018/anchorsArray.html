@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Anchors and Hashes</title>
+<style>
+body{
+	background-color:#d9e6cc;
+	font-family:Verdana;
+}
+h2{
+	font-size:24pt;
+	color:#ff0040;
+}
+h3{
+	font-size:16pt;
+	color:#008080;
+}
+a{
+	color:#e68026;
+	font-size:10; font-weight:bold;
+}
+</style>
+</head>
+
+<body onLoad="countAnchors();">
+<h2>Top Level <a name="top"></a></h2>
+<a href="#" onMouseDown="goAnchors('one')">One</a> | <a href="#" onMouseOut="goAnchors('two')">Two</a> | <a href="#" onMouseMove="goAnchors('three')">Three</a> | <a href="#" onMouseOver="goAnchors('four')">Four</a><br/>
+<br/><hr/><hr/><br/>
+<h3>Level One<a name="one"></a></h3>
+<br/><hr/><hr/><br/>
+<h3>Level Two<a name="two"></a></h3>
+<br/><hr/><hr/><br/>
+<h3>Level Three<a name="three"></a></h3>
+<br/><hr/><hr/><br/>
+<a href="#" onMouseUp="goAnchors('top')">Top</a>
+<h3>Level Four<a name="four"></a></h3>
+
+<script>
+function countAnchors(){
+	alert("This script has " + document.anchors.length + "anchors.");
+	}
+	function goAnchors(){
+		location.hash = anchName;
+		}
+</script>
+</body>
+</html>

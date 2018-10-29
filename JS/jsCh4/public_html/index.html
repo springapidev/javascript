@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript Operators</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+            // + Add Or Concatenate Operator
+            var x = 10;
+            var y = 5;
+            var result = x + y;
+            document.write("Result: " + result + "<br/>");
+            var fName = "Donalt";
+            var mName = "J";
+            var lName = "Trump"
+            var fullName = fName + " " + mName + " " + lName;
+            document.write("Full Name: " + fullName + "<br/>");
+            document.write("<hr/>");
+            // - Substract Or negative/negation Operator
+            var p = 10;
+            var q = -p;
+            var result2 = p - q;
+            document.write("Result(P-Q): " + result2 + "<br/>");
+            document.write("<hr/>");
+            // * multiply Operator
+            var result3 = x * y;
+            document.write("Result(X*Y): " + result3 + "<br/>");
+            document.write("<hr/>");
+            // / Divide Operator
+            var result4 = x / y;
+            document.write("Result(X/Y): " + result4 + "<br/>");
+            document.write("<hr/>");
+            // % Modulys/Reminder Operator
+            var result5 = x % y;
+            document.write("Result(X%Y): " + result5 + "<br/>");
+            document.write("<hr/>");
+            // ++ increment, -- decrement Operator
+            ++x;//Pre-Increment
+            --y;//Pre-Decrement
+            p++;//Post-Increment
+            q--;//Post-Decrement
+            document.write("X: " + x + " Y: " + y + "P:" + p + "Q:" + q + "<br/>");
+            document.write("<hr/>");
+            // < Less Than Operator
+            var result6 = x < y;
+            document.write("Result(x<y)" + result6 + "<br/>");
+            document.write("<hr/>");
+            // < Greater Than Operator
+            var result7 = x > y;
+            document.write("Result(x>y)" + result7 + "<br/>");
+            document.write("<hr/>");
+            // <= Less Than Or Equal Operator
+            var result8 = x <= y;
+            document.write("Result(x<=y)" + result8 + "<br/>");
+            document.write("<hr/>");
+            // <= Greater Than Or Equal Operator
+            var result9 = x >= y;
+            document.write("Result(x>=y)" + result9 + "<br/>");
+            document.write("<hr/>");
+            //  && logical AND, == Test or Equality
+            var m = 10;
+            var n = 5;
+            if ((m == 10) && (n == 5)) {
+                document.write("Above Both Condition are True" + "<br/>");
+            } else {
+                document.write("Above One or Both Condition are False" + "<br/>");
+            }
+            document.write("<hr/>");
+            //  || logical OR, == Test or Equality
+            if ((m == 10) || (n == 4)) {
+                document.write("Above Both Condition are True" + "<br/>");
+            } else {
+                document.write("Above One or Both Condition are False" + "<br/>");
+            }
+            document.write("<hr/>");
+            //   == Test or strict Equality
+            var ab = 10;
+            var cd = "10";
+            if (ab != cd) {
+                document.write("Above Condition is True" + "<br/>");
+            } else {
+                document.write("Above Condition is False" + "<br/>");
+            }
+            document.write("<hr/>");
+            //   != Test or strict Equality
+
+            if (ab !== cd) {
+                document.write("Above Condition is True" + "<br/>");
+            } else {
+                document.write("Above Condition is False" + "<br/>");
+            }
+            document.write("<hr/>");
+            //   !== Test or strict Equality
+            if (ab !== cd) {
+                document.write("Above Condition is True" + "<br/>");
+            } else {
+                document.write("Above Condition is False" + "<br/>");
+            }
+            document.write("<hr/>");
+            //   === Test or strict Equality
+            if (ab === cd) {
+                document.write("Above Condition is True" + "<br/>");
+            } else {
+                document.write("Above Condition is False" + "<br/>");
+            }
+            document.write("<hr/>");
+            // = += -= *= /= %=
+            x = 10;//Assign
+            x += 5;//x=x+5 , x=10+5, x=15
+            x -= 8;//x=x-8, x=10-8, x=2
+            x *= 2; //x=x * 2, x=10 *2, x=20
+            x /= 5; //x=x / 5, x= 10 / 5,x=2
+            x %= 3; //x=x % 3, x=10 % 3, x=1 ///////VaGGGGGGGSHESHHHHHHH
+            document.write("<hr/>");
+            // ?: Ternary Operastor: condition ? true message : false message
+
+            var age = 25;
+            var rs = age > 28 ? true : false;
+            document.write("Result: " + rs + "<br/>");
+
+            var wc = age >= 18 ? "Welcome" : "Not Permitted";
+            document.write("Result: " + wc + "<br/>");
+            document.write("<hr/>");
+            // typeof operator
+            var salary = 50000;
+            var name = "Donalth J Trump";
+            var students = ['Arefin', 'Mita', 'Mehedeeeee'];
+            var result = true;
+            var abc;
+            var rs = null;
+            document.write("salary for Number: " + typeof salary + "<br/>");
+            document.write("name for String: " + typeof name + "<br/>");
+            document.write("students for Object: " + typeof students + "<br/>");
+            document.write("result for Boolean: " + typeof result + "<br/>");
+            document.write("abc for Undefined: " + typeof abc + "<br/>");
+            document.write("rs for Null: " + typeof rs + "<br/>");
+            document.write("<hr/>");
+            // delete operator
+            var ppp = [10, 20, 30];
+            delete(ppp[1]);
+            document.write([ppp]);
+            document.write("<hr/>");
+
+        </script>
+        <a href="javascript:void alert('Wow! JavaScript is Awesome!!!')">Hit Me</a>
+
+    </body>
+</html>

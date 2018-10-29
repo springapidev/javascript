@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Timing Methods</title>
+<script>
+var cupUp=new Image();
+cupUp.src="cupJava.jpg";
+var cupDown=new Image();
+cupDown.src="hideJava.jpg";
+var alpha;//This variable needs to be global
+var beta;
+function interval(){
+	alpha=window.setInterval("document.cup.src=cupDown.src",500);
+	
+	}
+	function timeOut() {
+		beta=window.setTimeout("document.cup.src=cupUp.src",1000);
+		window.clearInterval(alpha);
+		
+		}
+		function cleartimeOut(){
+				window.clearTimeout(beta);
+		}
+		var i=1;
+		while(i<100){
+		interval();
+		timeOut();
+		i++;
+		}
+</script>
+</head>
+<body>
+<table cellpadding="0" cellspacing="0" border="0" width="100%" height="100%" align="center">
+<tr valign="middle">
+<td align="center"><img name="cup" src="cupJava.jpg" alt="java" width="64" height="38"><p>
+<a href="#" onClick="interval()">Interval</a>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="#" onClick="timeOut()">Time Out</a>
+
+&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="#" onClick="cleartimeOut()">Clear Time Out</a>
+</td>
+</tr>
+</table>
+</body>
+</html>

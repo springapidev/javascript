@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h2>Sum Using different loops</h2>
+        <script>
+            var sum = 0;
+            var startingNumber = 1;
+            var endingNumber = 10;
+            while (startingNumber <= endingNumber) {
+                sum += startingNumber;
+                startingNumber++;
+            }
+            document.write("Sum using While Loop: " + sum);
+
+            document.write("<hr/>");
+
+            var sum2 = 0;
+            var sn = 1;
+            var en = 10;
+            for (sn; sn <= en; sn++) {
+                sum2 += sn;
+            }
+            document.write("Sum using For Loop: " + sum2);
+
+            document.write("<hr/>");
+            var sum3 = 0;
+            var firstNumber = 1;
+            var lastNumber = 10;
+            do {
+                sum3 += firstNumber;
+                firstNumber++;
+            } while (firstNumber <= lastNumber);
+            document.write("Sum using Do while Loop: " + sum3);
+
+            document.write("<hr/>");
+            var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+            var sum4 = 0;
+
+            for (var i in numbers) {
+                sum4 += numbers[i];
+            }
+            document.write("Sum using For In Loop: " + sum4);
+            document.write("<hr/>");
+            var students = ['mahbub', 'Mehedee', 'sofiqul', 'mortoza', 'mustafiz'];
+           
+            for (var i in students) {
+                if (students[i] == 'mahbub' || students[i] == 'mortoza') {
+                    continue;
+                }
+                document.write(students[i] + "<br/>");
+            }
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,16 @@
+Evidence For Js
+1. Form Data Validation and display form data into another page.
+2. Find out Biggest number among some numbers.
+3. Find out Factorial
+4. Find out prime number from 1 to 100
+5. Check a number it is prime or not.
+6. Make sum from 1 to 10 using for loop, while loop and do while loop.
+7. Make a page that will contain some button and after clicking those button,
+ background color will change.
+8. make a program for Student Pass fail based on exam marks.
+9. Sort Number.
+10. Search a Number from an Array.
+11. Insert a number at the begging of an Array.
+12. Insert a number at the end of an Array.
+13. Delete a number from the begging of an Array.
+14. Delete a number from the begging of an Array.

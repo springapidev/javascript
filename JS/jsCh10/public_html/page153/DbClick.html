@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+            function doubleUp() {
+                window.location = "backPage.html";
+            }
+            function forwardTo() {
+                var alpha = history.forward();
+            }
+        </script>
+        <form>
+            Double click this button First:
+            <input type="button" value="Two Clicks Here" ondblclick="doubleUp()"/><br/>
+            When you return, Click this Button.
+            <input type="button" value="Go Forward Here" onclick="forwardTo()"/><br/>
+        </form>
+    </body>
+</html>

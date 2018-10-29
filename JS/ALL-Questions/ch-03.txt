@@ -1,0 +1,110 @@
+JavaScript Chapter-03
+
+Q-1. JavaScript is a weekly type or untype language. Explain.
+Ans.
+Q-2: What are JavaScript Data Types? Explain each.
+Ans. 
+Q-3: What is object in JavaScript?
+Ans. 
+Q-4: What is array in JavaScript?
+Ans. 
+Q-5: What is literals in JavaScript?
+Ans. 
+Q-6: What is Numbers in JavaScript? Explain.
+Ans. 
+Q-7: What is difference between Integer and Floating point number?
+Ans. 
+Q-8: What is scientific notations in JavaScript?
+Ans. 
+Q-9: What is Hexadecimal literals in JavaScript? Give an example.
+Ans. 
+Q-10: Hexadecimal values is sixcharacter color values in JavaScript, True or false?
+Ans. True.
+Q-11: What is Escape Sequence for Strings in JavaScript? Give some examples.
+Ans. 
+Q-12: What is write() in JavaScript?
+Ans. 
+Q-13: What is Boolean values in JavaScript?
+Ans. 
+Q-2: Who developed Boolean mathmatics?
+Ans. 
+Q-14: Boolean values have two literals in JavaScript. what are those? Explain.
+Ans. 
+Q-15: Where does Boolean literals derive from?
+Ans. 
+Q-16: Most Boolean values and test are found in conditional statements? Explain.
+Ans. 
+Q-17: What is concatenation in JavaScript?
+Ans. 
+Q-18: What are behaviors of +(plus) sign in JavaScript?
+Ans. 
+Q-19: Explain Objects as literals.
+Ans. 
+Q-20:Explain Functions as literals.
+Ans. 
+Q-21: What is undefine in JavaScript? Give an example.
+Ans. 
+Q-22: What is null in JavaScript? Give an example.
+Ans. 
+Q-23: What is Regular expression in JavaScript? How does it work? Give an example.
+Ans. 
+Q-24: What is variable in JavaScript? Give an example.
+Ans. 
+Q-25: Explain variable declaring and naming in JavaScript.
+Ans. 
+Q-26: What are rules or conventions of variable naming?
+Ans. 
+Q-27:What is variable scope in JavaScript? 
+Ans. 
+Q-28:What is local variable in JavaScript? Give an example.
+Ans. 
+Q-29:What is global variable in JavaScript? Give an example.
+Ans. 
+Q-30: What is primitive data? Explain.
+Ans. 
+Q-31: What is compound data in JavaScript? Explain.
+Ans. 
+Q-32: How many ways can you create an array and what are those ways?
+Ans. 
+Q-33: What is array properties? 
+Ans. 
+Q-34: What is array length in JavaScript? Explain.
+Ans. 
+Q-35: What is Arrays.join() in JavaScript? Give an example.
+Ans. 
+Q-36. How many arguments in Arrays.join()? Explain each argument.
+Ans.
+Q-37: How to concat Two arrays in JavaScript? Give an example.
+Ans. 
+Q-38.What is Arrays.sort() in JavaScript? Give an example.
+Ans.
+Q-39. How many arguments in Arrays.sort()? Explain each argument.
+Ans.
+Q-40.What is Arrays.reverse() in JavaScript? Give an example.
+Ans.
+Q-41. How many arguments in Arrays.reverse()? Explain each argument.
+Ans.
+Q-42.What is Arrays.slice() in JavaScript? Give an example.
+Ans.
+Q-43. How many arguments in Arrays.slice()? Explain each argument.
+Ans.
+Q-44.What is Arrays.splice() in JavaScript? Give an example.
+Ans.
+Q-45. How many arguments in Arrays.joinsplice Explain each argument.
+Ans.
+Q-46.What is Arrays.shift() in JavaScript? Give an example.
+Ans.
+Q-47. How many arguments in Arrays.shiift()? Explain each argument.
+Ans.
+Q-48.What is Arrays.unshift() in JavaScript? Give an example.
+Ans.
+Q-49. How many arguments in Arrays.unshift()? Explain each argument.
+Ans.
+Q-50.What is Arrays.push() in JavaScript? Give an example.
+Ans.
+Q-51. How many arguments in Arrays.push()? Explain each argument.
+Ans.
+Q-52.What is Arrays.pop() in JavaScript? Give an example.
+Ans.
+Q-53. How many arguments in Arrays.pop()? Explain each argument.
+Ans.

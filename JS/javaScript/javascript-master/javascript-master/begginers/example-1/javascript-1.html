@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Js Ex-1</title>
+<script>
+function myFunction() {
+    document.getElementById("demoforFunction").innerHTML = "We are changed, beCause we are serious";
+}
+</script>
+</head>
+<body>
+<H2>Code-1</H2>
+<pre><code>document.writeln("Hello Coders");</code></pre>
+<h3>Output: </h3>
+<!--No need writing type of language attribute-->
+<script>
+//Simple Hello Coders
+document.writeln("Hello Coders");
+//Simple html hr tag usages in  javaScript
+document.writeln("<hr/>");
+
+
+
+document.writeln("<h3>Output: </h3>");
+//Simple Html Tag within JavaScript 
+document.writeln("<h1>"+'Hello Coders from Html Tag'+"</h1>");
+</script>
+<hr/>
+<!--Simple Html Tag within Html Button Click -->
+
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = 'Hello Coder After Button Click'">
+Click me to display Output</button>
+<p id="demo"></p>
+<hr/>
+<!--Display Date Time within Html Button Click -->
+<button type="button"
+onclick="document.getElementById('datetimeDisplay').innerHTML = Date()">
+Click me to display Date Time</button>
+<p id="datetimeDisplay"></p>
+
+<hr/>
+<p id="demoforFunction">See what is happening after calling the function</p>
+<button type="button" onclick="myFunction()">Call The Function By Clicking</button>
+
+</body>
+</html> 

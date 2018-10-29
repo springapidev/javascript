@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Image array</title>
+</head>
+
+<body>
+<table border="1" cols="7" width="100%" height="75%" bgcolor="#cccccc">
+<tr>
+<td align="center" valign="center">
+<img name="c1" src="c1.jpg" border="0" height="300" width="70"/>
+</td>
+<td align="center" valign="center">
+<img name="c2" src="c2.jpg" border="0" height="300" width="70"/>
+</td>
+<td align="center" valign="center">
+<img name="c3" src="c3.png" border="0" height="300" width="70"/>
+</td>
+<td align="center" valign="center">
+<img name="c4" src="c4.jpg" border="0" height="300" width="70"/>
+</td>
+<td align="center" valign="center">
+<img name="c5" src="c5.gif" border="0" height="300" width="70"/>
+</td>
+<td align="center" valign="center">
+<img name="c6" src="c6.jpg" border="0" height="300" width="70"/>
+</td>
+<td align="center" valign="center">
+<img name="c7" src="c7.jpg" border="0" height="300" width="70"/>
+</td>
+</tr>
+</table>
+<center>
+<form>
+<input type="text" name="hue" size="1"/><br/>
+<input type="button" value="Click to change the color of image." onClick="chnageIt()"/>
+</form>
+</center>
+
+<script>
+function chnageIt(){
+	var c1 = new Image();
+	var n = document.forms[0].hue.value;
+	n = parseInt(n);
+	c1.src = "c3.png";
+	document.images[n].src = c1.src;
+	}
+</script>
+</body>
+</html>

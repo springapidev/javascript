@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h2>With Statement</h2>
+        <form name="customer">
+            <input type="text" name="fname"/>
+             <input type="text" name="lname"/>
+              <input type="text" name="address"/>
+               <input type="text" name="city"/>
+                <input type="text" name="state"/>
+                   <input type="button" value="Click Here" onclick="showEm()"/>
+        </form>
+        <script>
+            function showEm() {
+                with (document.customer) {
+                    var alpha = fname.value;
+                    var beta = lname.value;
+                    var gamma = address.value;
+                    var delta = city.value;
+                    var epsilon = state.value;
+
+                }
+                var fullName = alpha + " " + beta + "\n";
+                var livesHere = gamma + "\n" + delta + ", " + epsilon;
+                alert(fullName + " " + livesHere);
+            }
+        </script>
+        
+    </body>
+</html>

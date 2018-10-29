@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+            var nowdate = new Date();
+            document.write("nowdate: " + nowdate + "<hr/>");
+            var date = nowdate.getDate();
+            document.write("date: " + date + "<hr/>");
+            var month = nowdate.getMonth();
+            document.write("Month: " + month + "<hr/>");
+            var day = nowdate.getDay();
+            document.write("Day: " + day + "<hr/>");
+            if (day == 2 && month == 5) {
+                alert("Wow, It is Tuesday of June,4th week ");
+            } else {
+                alert("noooooooooooooooo")
+            }
+            var ms = nowdate.getMilliseconds();
+            document.write("Ms from 1/1/1970 " + ms + "<hr/>");
+        </script>
+
+    </body>
+</html>

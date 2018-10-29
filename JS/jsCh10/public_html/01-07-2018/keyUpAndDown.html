@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Key Up and Down</title>
+<style>
+body{
+	font-family:Verdana;
+	background-color:#e3f37f;
+}
+h2{
+	color:#4d57ab;
+	font-size:16pts;
+	font-weight:bold;
+}
+a{
+	color:#fe0006;
+	font-weight:bold
+}
+</style>
+</head>
+
+<body bgcolor="cornflowerblue" onKeyPress="alert('This was set up in the body element.');">
+<center>
+<h2>Click on the link text, button, or text window.<br/>
+Then press any key.</h2>
+<a href="#" onKeyUp="alert('The<a href> did it!');">link Text</a><br/>
+<form>
+<input type="button" value="Surprise me" onKeyPress="alert('You have to press the Surprise me button first!');"/><br/>
+<input type="text" size="20" onKeyDown="fillIn()"/>
+</form>
+</center>
+<script>
+function fillIn(){
+	document.forms[0].elements[1].value = "JavaScript is here!";
+	}
+</script>
+</body>
+</html>

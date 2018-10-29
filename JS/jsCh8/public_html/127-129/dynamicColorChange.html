@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Dynamic Color Change</title>
+</head>
+
+<body>
+<h2>Big Font</h2>
+<form>
+<input type="button" value="Red" onClick="document.bgColor='red'" onMouseDown="message('red')"/>
+<input type="button" value="Green" onClick="document.bgColor='green'" onMouseDown="message('green')"/>
+<input type="button" value="Blue" onClick="document.bgColor='blue'" onMouseDown="message('blue')"/><br/>
+<input type="button" value="Font Color to Yellow" onClick="document.fgColor='yellow'"/><br/>
+<input type="button" value="Font Color to Firbrick" onClick="document.fgColor='firebrick'"/><br/>
+<input type="text"/>
+</form>
+
+<script>
+function message(hue){
+	document.forms[0].elements[5].value = hue;
+	}
+</script>
+</body>
+</html>

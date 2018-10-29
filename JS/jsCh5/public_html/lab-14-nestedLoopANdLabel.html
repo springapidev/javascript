@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h2>With Statement</h2>
+
+        <script>
+            var teamJ = "";
+            var teamMember = 0;
+            team:
+                    for (var outCount = 1; outCount < 3; outCount++) {
+                jersey:
+                        for (var inCount = 20; inCount < 35; inCount++) {
+                    if (inCount == 22 || inCount == 29 ) {
+                        continue jersey;
+                    }
+                    if (teamMember == 13) {
+                        teamMember = 0;
+                    }
+                    teamMember++;
+                    teamJ += "Team " + outCount + " Member " + teamMember + " Jersey Number " + inCount + "<br/>";
+                }
+            }
+            document.write(teamJ);
+        </script>
+
+    </body>
+</html>

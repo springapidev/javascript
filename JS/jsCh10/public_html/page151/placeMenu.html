@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+            function goTo() {
+                parent.frames[1].location = "place2.html";
+            }
+
+        </script>
+        <form>
+            <input type="button" value="Place 1" onclick="parent.frames[1].location = 'place.html'"/><br/>
+            <input type="button" value="2" onclick="goTo()"/><br/> 
+            <input type="button" value="3" onclick="parent.travel.location = 'place3.html'"/><br/>
+            <input type="button" value="4" onclick="top.frames[1].location = 'place4.html'"/><br/>
+            <input type="button" value="5" onclick="top.travel.location = 'place5.html'"/><br/> 
+            <input type="button" value="6" onclick="parent.frames[1].location.replace('place6.html')"/><br/>
+            <input type="button" value="7" onclick="parent.frames[1].location = 'place7.html'"/><br/>
+
+        </form>
+    </body>
+</html>

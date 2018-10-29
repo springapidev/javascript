@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Digital Clock | Js Ex-5</title>
+<script type="text/javascript">
+var tm;
+function digitalClock(){
+var dt=new Date();
+
+document.demoForm.clock.value=dt.getHours()+":"+dt.getMinutes()+":"+dt.getSeconds();
+
+}
+function timeOn(){
+tm=window.setInterval('digitalClock()',500);
+}
+function timeOff(){
+window.clearInterval(tm);
+}
+function makeLargeClock(){
+	document.getElementById('clock').style.fontSize='200px';
+	document.getElementById('clock').style.color='green';
+	document.getElementById('clock').style.border='0';
+	}
+	function makeLargeClockRed(){
+	document.getElementById('clock').style.fontSize='200px';
+	document.getElementById('clock').style.color='red';
+	document.getElementById('clock').style.border='0';
+	}
+
+</script>
+</head>
+<body style="font-size:18px; width:70%; margin:0 auto;" onload="timeOn()">
+
+<h2>On Off Digital Clock</h2>
+
+<form name="demoForm">
+<input name="clock" type="text" size="40" id="clock" />
+<input type="button" onclick="timeOn()" value="On"/>
+<input type="button" onclick="timeOff()" value="Off"/>
+<input type="button" onclick="makeLargeClock()" value="Click me to make Large Clock"/>
+<input type="button" onclick="makeLargeClockRed()" value="Click me to make Red Clock"/>
+</form>
+</body>
