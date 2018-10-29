@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sum using Loop</title>
+    </head>
+    <body style="font-size:18px">
+
+        <h2>Sum using Loop</h2>
+        <script>
+            var sn = parseInt(prompt("Enter Starting Number", ""));
+            var en = parseInt(prompt("Enter Ending Number", ""));
+            var sum = 0;
+            function makeSum(startingNum, endingNum) {
+                if (startingNum < endingNum) {
+                    for (startingNum; startingNum <= endingNum;
+                            startingNum++) {
+                        sum += startingNum;
+                    }
+                } else if (startingNum > endingNum) {
+                    for (startingNum; startingNum >= endingNum;
+                            startingNum--) {
+                        sum += startingNum;
+                    }
+                } else if (startingNum == endingNum) {
+                    sum = startingNum;
+                } else {
+                    sum = 0;
+                }
+                return sum;
+            }
+            alert(makeSum(sn, en));
+
+        </script>
+        <h1>Best of LUCK!</h1>
+    </body>
+</html> 
