@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.8/ace.js"></script>
+        <style type="text/css">
+            #jsEditor{
+                height: 300px;
+            }
+        </style>
+    
+    </head>
+    <body>
+        <div id="jsEditor">
+            var data="Hello ACE Editor";
+            function sayHello(){
+            console.log(data);
+            }
+          
+       
+            public class HelloJava{
+                private int id;
+                private String name;
+            public HelloJava(int id, String name){
+                this.id=id;
+                this.name=name;
+                }            
+            }
+          
+        </div>
+          <script type="text/javaScript">
+              //https://www.youtube.com/watch?v=o2uUv4lCEUg
+                var e = ace.edit("jsEditor");
+                e.getSession().setMode("ace/mode/javascript","ace/mode/java");
+                e.setTheme("ace/theme/xcode");
+                e.getSession().setTabSize(2);
+                e.renderer.setShowGutter(false);
+                console.log(e.getValue())
+            </script>
+    </body>
+    
+</html>
