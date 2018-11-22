@@ -1,0 +1,103 @@
+Logical Questions:
+1. What will the code below output to the console and why ?
+
+console.log(1 +  "2" + "2");
+console.log(1 +  +"2" + "2");
+console.log(1 +  -"1" + "2");
+console.log(+"1" +  "1" + "2");
+console.log( "A" - "B" + "2");
+console.log( "A" - "B" + 2);
+
+2. What will be the output of the following code:
+
+for (var i = 0; i < 5; i++) {
+	setTimeout(function() { console.log(i); }, i * 1000 );
+}
+
+
+3. What will be the output when the following code is executed? Explain.
+
+console.log(false == '0')
+console.log(false === '0')
+
+
+
+4. What will the following code output to the console:
+
+console.log((function f(n){return ((n > 1) ? n * f(n-1) : n)})(10));
+
+5. What do the following lines output, and why?
+
+console.log(1 < 2 < 3);
+console.log(3 > 2 > 1);
+
+6. Imagine you have this code:
+
+var a = [1, 2, 3];
+
+a) Will this result in a crash?
+
+a[10] = 99;
+
+b) What will this output?
+
+console.log(a[6]);
+
+7. What is the value of typeof undefined == typeof NULL?
+
+8 What would following code return?
+
+console.log(typeof typeof 1);
+
+
+9. What will the following code output and why?
+
+var b = 1;
+function outer(){
+   	var b = 2
+    function inner(){
+        b++;
+        var b = 3;
+        console.log(b)
+    }
+    inner();
+}
+outer();
+
+
+10. Writer a array with 3 elements and add new one at the end of array and another new one at the begining of the array.
+
+
+
+============= True False===========
+
+11. Is 'false' is false?
+
+
+12. Is ' ' is false?
+
+
+13. What about {}?
+
+
+14. Tell me about []?
+
+
+15. You talked bout '' to be falsy. What about new String('')?
+
+
+16. Tell me about new Boolean(false)
+
+
+17. Boolean(function(){})
+
+
+18. Boolean(/foo/)
+
+
+19. true%1
+
+
+20. ''%1
+
+

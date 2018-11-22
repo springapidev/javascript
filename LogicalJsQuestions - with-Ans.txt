@@ -1,0 +1,203 @@
+Logical Questions:
+1. What will the code below output to the console and why ?
+
+console.log(1 +  "2" + "2");
+console.log(1 +  +"2" + "2");
+console.log(1 +  -"1" + "2");
+console.log(+"1" +  "1" + "2");
+console.log( "A" - "B" + "2");
+console.log( "A" - "B" + 2);
+
+Ans. The above code will output the following to the console:
+
+"122"
+"32"
+"02"
+"112"
+"NaN2"
+NaN
+
+Here’s why…
+
+The fundamental issue here is that JavaScript (ECMAScript) is a loosely typed language and it performs automatic type conversion on values to accommodate the operation being performed. Let’s see how this plays out with each of the above examples.
+
+Example 1: 1 + "2" + "2" Outputs: "122" Explanation: The first operation to be performed in 1 + "2". Since one of the operands ("2") is a string, JavaScript assumes it needs to perform string concatenation and therefore converts the type of 1 to "1", 1 + "2" yields "12". Then, "12" + "2" yields "122".
+
+Example 2: 1 + +"2" + "2" Outputs: "32" Explanation: Based on order of operations, the first operation to be performed is +"2" (the extra + before the first "2" is treated as a unary operator). Thus, JavaScript converts the type of "2" to numeric and then applies the unary + sign to it (i.e., treats it as a positive number). As a result, the next operation is now 1 + 2 which of course yields 3. But then, we have an operation between a number and a string (i.e., 3 and "2"), so once again JavaScript converts the type of the numeric value to a string and performs string concatenation, yielding "32".
+
+Example 3: 1 + -"1" + "2" Outputs: "02" Explanation: The explanation here is identical to the prior example, except the unary operator is - rather than +. So "1" becomes 1, which then becomes -1 when the - is applied, which is then added to 1 yielding 0, which is then converted to a string and concatenated with the final "2" operand, yielding "02".
+
+Example 4: +"1" + "1" + "2" Outputs: "112" Explanation: Although the first "1" operand is typecast to a numeric value based on the unary + operator that precedes it, it is then immediately converted back to a string when it is concatenated with the second "1" operand, which is then concatenated with the final "2" operand, yielding the string "112".
+
+Example 5: "A" - "B" + "2" Outputs: "NaN2" Explanation: Since the - operator can not be applied to strings, and since neither "A" nor "B" can be converted to numeric values, "A" - "B" yields NaN which is then concatenated with the string "2" to yield “NaN2”.
+
+Example 6: "A" - "B" + 2 Outputs: NaN Explanation: As exlained in the previous example, "A" - "B" yields NaN. But any operator applied to NaN with any other numeric operand will still yield NaN.
+
+2. What will be the output of the following code:
+
+for (var i = 0; i < 5; i++) {
+	setTimeout(function() { console.log(i); }, i * 1000 );
+}
+
+Ans. The code sample shown will not display the values 0, 1, 2, 3, and 4 as might be expected; rather, it will display 5, 5, 5, 5, and 5.
+
+The reason for this is that each function executed within the loop will be executed after the entire loop has completed and all will therefore reference the last value stored in i, which was 5.
+
+Closures can be used to prevent this problem by creating a unique scope for each iteration, storing each unique value of the variable within its scope, as follows:
+
+for (var i = 0; i < 5; i++) {
+    (function(x) {
+        setTimeout(function() { console.log(x); }, x * 1000 );
+    })(i);
+}
+
+This will produce the presumably desired result of logging 0, 1, 2, 3, and 4 to the console.
+
+3. What will be the output when the following code is executed? Explain.
+
+console.log(false == '0')
+console.log(false === '0')
+
+Ans. The code will output:
+
+true
+false
+
+4. What will the following code output to the console:
+
+console.log((function f(n){return ((n > 1) ? n * f(n-1) : n)})(10));
+Ans. The code will output the value of 10 factorial (i.e., 10!, or 3,628,800).
+
+Here’s why:
+
+The named function f() calls itself recursively, until it gets down to calling f(1) which simply returns 1. Here, therefore, is what this does:
+
+f(1): returns n, which is 1
+f(2): returns 2 * f(1), which is 2
+f(3): returns 3 * f(2), which is 6
+f(4): returns 4 * f(3), which is 24
+f(5): returns 5 * f(4), which is 120
+f(6): returns 6 * f(5), which is 720
+f(7): returns 7 * f(6), which is 5040
+f(8): returns 8 * f(7), which is 40320
+f(9): returns 9 * f(8), which is 362880
+f(10): returns 10 * f(9), which is 3628800
+
+5. What do the following lines output, and why?
+
+console.log(1 < 2 < 3);
+console.log(3 > 2 > 1);
+
+Ans. The first statement returns true which is as expected.
+
+The second returns false because of how the engine works regarding operator associativity for < and >. It compares left to right, so 3 > 2 > 1 JavaScript translates to true > 1. true has value 1, so it then compares 1 > 1, which is false.
+
+6. Imagine you have this code:
+
+var a = [1, 2, 3];
+
+a) Will this result in a crash?
+
+a[10] = 99;
+
+b) What will this output?
+
+console.log(a[6]);
+Ans. a) It will not crash. The JavaScript engine will make array slots 3 through 9 be “empty slots.”
+
+b) Here, a[6] will output undefined, but the slot still remains empty rather than filled with undefined. This may be an important nuance in some cases. For example, when using map(), empty slots will remain empty in map()’s output, but undefined slots will be remapped using the function passed to it:
+
+var b = [undefined];
+b[2] = 1;
+console.log(b);             // (3) [undefined, empty × 1, 1]
+console.log(b.map(e => 7)); // (3) [7,         empty × 1, 7]
+
+The expression will be evaluated to true, since NULL will be treated as any other undefined variable.
+
+Note: JavaScript is case-sensitive and here we are using NULL instead of null.
+
+
+7. What is the value of typeof undefined == typeof NULL?
+Ans. The expression will be evaluated to true, since NULL will be treated as any other undefined variable.
+
+Note: JavaScript is case-sensitive and here we are using NULL instead of null.
+
+
+8 What would following code return?
+
+console.log(typeof typeof 1);
+Ans. string
+
+typeof 1 will return "number" and typeof "number" will return string.
+
+9. What will the following code output and why?
+
+var b = 1;
+function outer(){
+   	var b = 2
+    function inner(){
+        b++;
+        var b = 3;
+        console.log(b)
+    }
+    inner();
+}
+outer();
+
+Ans. Output to the console will be “3”.
+
+There are three closures in the example, each with it’s own var b declaration. When a variable is invoked closures will be checked in order from local to global until an instance is found. Since the inner closure has a b variable of its own, that is what will be output.
+
+Furthermore, due to hoisting the code in inner will be interpreted as follows:
+
+function inner () {
+    var b; // b is undefined
+    b++; // b is NaN
+    b = 3; // b is 3
+    console.log(b); // output "3"
+}
+
+10. Writer a array with 3 elements and add new one at the end of array and another new one at the begining of the array.
+
+
+============= True False===========
+
+Question: Is 'false' is false?
+
+Answer: No. Because, it's a string with length greater than 0. Only empty string is false.
+
+Question: Is ' ' is false?
+
+Answer: No. Because, it's not an empty string. There is a white space in it.
+
+Question: What about {}?
+
+Answer: true. It's an object. An object without any property is an object can't be falsy.
+
+Question: Tell me about []?
+
+Answer: This is also truthy. It's an array object (array is child of object) is truthy.
+
+Question: You talked bout '' to be falsy. What about new String('')?
+
+Answer: Though you are passing empty string to the string constructor, it is creating an String object. More precisely a instance of String object. It becomes an object. Hence, it is not false. so, it is truthy.
+
+Question: Tell me about new Boolean(false)
+
+Answer: truthy. As it creates an instance of the Boolean object which is an object. Object is truthy.
+
+Question: Boolean(function(){})
+
+Answer: true if you pass a truthy value to Boolean, it will be true.
+
+Question: Boolean(/foo/)
+
+Answer: true
+
+Question: true%1
+
+Answer: 0. When you are trying to find reminder of true, true becomes 1 and reminder of 1 while dividing by 1 is 0. you will get same result if you doe false%1
+
+Question: ''%1
+
+Answer: 0
